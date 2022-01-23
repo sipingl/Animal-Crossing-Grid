@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: url("../images/original/acnh\ leaf\ light\ green.png");
+}
+
+#wrapper{
+    width:100%;
+    height:100vh;
+    background-color:rgb(255, 255, 255, 0.55);
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#a{
+    grid-column: 1/ span 2;
+    background-image: url("../images/edited/isabelle.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#b{
+    background-image: url("../images/original/promotion1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#c{
+    grid-column:4;
+    grid-row: 1/ span 2;
+    background-image: url("../images/edited/tomnook.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#d{
+    background-image: url("../images/edited/nintendo_logo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#e{
+    grid-column: 2/ span 2;
+    grid-row: 2/ span 2;
+
+    background-image: url("../images/original/main_branding.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#f{
+    background-image: url("../images/original/nintendo_switch.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#g{
+    grid-row: 3/ span 2;
+    background-image: url("../images/edited/celeste.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#h{
+    background-image: url("../images/edited/game_promotion.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#i{
+    grid-column:3/ span 2;
+    background-image: url("../images/edited/daisymae.png");
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen 
+    and (max-width: 500px){
+        #wrapper{display:grid; grid-template-columns: 1fr;}
+        #a{grid-column: 1; grid-row: 2; background-size: contain; background-repeat: no-repeat;}
+        #b{grid-column: 1; grid-row: 3;}
+        #c{grid-column: 1; grid-row: 4; background-size: contain; background-repeat: no-repeat; background-color:rgb(255, 255, 255, 0.55);}
+        #d{grid-column: 1; grid-row: 5;}
+        #e{grid-column: 1; grid-row: 1;}
+        #f{grid-column: 1; grid-row: 6;}
+        #g{grid-column: 1; grid-row: 7; background-size: contain; background-repeat: no-repeat; background-color:rgb(255, 255, 255, 0.55);}
+        #h{grid-column: 1; grid-row: 8;}
+        #i{grid-column: 1; grid-row: 9; background-size: contain; background-repeat: no-repeat; background-color:rgb(255, 255, 255, 0.55);}   
+        #wrapper section{
+            height: 20em;
+        }
+}
